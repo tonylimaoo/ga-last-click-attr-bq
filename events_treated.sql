@@ -1,7 +1,3 @@
--- CREATE OR REPLACE TABLE `rocky-rawdata.anacapri_ga_attr.events_treated`
--- PARTITION BY event_date
--- AS
-
 WITH base_events AS (
   SELECT 
     CAST(event_date AS DATE FORMAT 'YYYYMMDD') AS event_date,
