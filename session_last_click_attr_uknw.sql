@@ -1,7 +1,3 @@
--- CREATE OR REPLACE TABLE `rocky-rawdata.anacapri_ga_attr.session_last_click_attr_table` 
--- PARTITION BY event_date
--- AS
-
 WITH base_events AS (
   SELECT 
     event_date,
